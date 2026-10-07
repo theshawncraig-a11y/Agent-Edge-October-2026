@@ -4,11 +4,13 @@ const path = require('node:path');
 
 const html = fs.readFileSync(path.resolve(__dirname, '..', 'index.html'), 'utf8');
 const expectedSections = [
+  ['AI Update', '#alex-update'],
   ['Client Spotlight', '#client-spotlight'],
   ['Lead ROI', '#lead-roi'],
   ['State Rankings', '#state-market-index'],
   ['Upcoming Events', '#september-events'],
   ['Resources', '#latest-cinc-articles'],
+  ['CINC University', '#issue-cta'],
 ];
 
 function linksWithin(markup) {
